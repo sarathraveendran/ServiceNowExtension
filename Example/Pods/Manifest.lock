@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.8.2)
+  - ServiceNowExtension (0.1.0):
+    - Alamofire
+
+DEPENDENCIES:
+  - ServiceNowExtension (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  ServiceNowExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ServiceNowExtension: 42d0809e29f62500bef3b366c2424acb17c16a48
+
+PODFILE CHECKSUM: 462adc9d3ab34a56a10ff1513ab5bca6db6b07b5
+
+COCOAPODS: 1.6.1

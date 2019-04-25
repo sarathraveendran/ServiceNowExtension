@@ -1,0 +1,6 @@
+framework module Pods_ServiceNowExtension_Example {
+  umbrella header "Pods-ServiceNowExtension_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

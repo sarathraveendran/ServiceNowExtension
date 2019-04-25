@@ -9,8 +9,9 @@
 Pod::Spec.new do |s|
   s.name             = 'ServiceNowExtension'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ServiceNowExtension.'
-
+  s.summary          = 'A ServiceNowExtension.'
+  s.swift_version    = '4.2'
+  
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
@@ -18,17 +19,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A genric plugin which helps to post the incidents to the Service now wall.
+  Once the admin verified it you will get the ticket updates through application.
                        DESC
 
-  s.homepage         = 'https://github.com/Sarath Raveendran/ServiceNowExtension'
+  s.homepage         = 'https://github.com/SarathRaveendran/ServiceNowExtension'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sarath Raveendran' => 'sarathraveendran87@gmail.com' }
-  s.source           = { :git => 'https://github.com/Sarath Raveendran/ServiceNowExtension.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SarathRaveendran/ServiceNowExtension.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'ServiceNowExtension/Classes/**/*'
   
@@ -38,5 +40,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Alamofire'
+  
 end
