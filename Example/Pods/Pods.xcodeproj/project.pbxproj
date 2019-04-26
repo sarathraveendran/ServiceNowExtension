@@ -15,17 +15,17 @@
 		355C18EEC82624A06A6CC93965258E33 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59E1AD3CC394A93392FF3DC8CF2961 /* Request.swift */; };
 		3BD1DAFE1F3E6C9E4EB0F2099B6D6FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0E56BEED9117DC5F2C7AF6582AB9C2 /* Foundation.framework */; };
 		3E0749AF6C51BCF0E4A41CF1D6A76FED /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7F7716086D54E6308EE52C8227B87 /* DispatchQueue+Alamofire.swift */; };
+		4DEC1D4D227334EA00FA3262 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D40227334EA00FA3262 /* Messages.swift */; };
+		4DEC1D4E227334EA00FA3262 /* Utlits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D41227334EA00FA3262 /* Utlits.swift */; };
+		4DEC1D4F227334EA00FA3262 /* SNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D42227334EA00FA3262 /* SNManager.swift */; };
+		4DEC1D50227334EA00FA3262 /* ServiceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D44227334EA00FA3262 /* ServiceList.swift */; };
+		4DEC1D51227334EA00FA3262 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D46227334EA00FA3262 /* DataManager.swift */; };
+		4DEC1D52227334EA00FA3262 /* APIConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D48227334EA00FA3262 /* APIConnection.swift */; };
+		4DEC1D53227334EA00FA3262 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D49227334EA00FA3262 /* NetworkHelper.swift */; };
+		4DEC1D54227334EA00FA3262 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D4A227334EA00FA3262 /* Reachability.swift */; };
+		4DEC1D55227334EA00FA3262 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D4B227334EA00FA3262 /* Parser.swift */; };
+		4DEC1D56227334EA00FA3262 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D4C227334EA00FA3262 /* NetworkRequest.swift */; };
 		60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB5272AD01ECD0B09A86818A7754C4 /* Timeline.swift */; };
-		6525E6812271CA96000AF842 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E6802271CA96000AF842 /* Parser.swift */; };
-		6525E6832271CC01000AF842 /* APIConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E6822271CC01000AF842 /* APIConnection.swift */; };
-		6525E6852271CC16000AF842 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E6842271CC16000AF842 /* Reachability.swift */; };
-		6525E6872271CC28000AF842 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E6862271CC28000AF842 /* NetworkRequest.swift */; };
-		6525E6892271CC38000AF842 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E6882271CC38000AF842 /* NetworkHelper.swift */; };
-		6525E68B2271CD29000AF842 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E68A2271CD29000AF842 /* Messages.swift */; };
-		6525E68D2271CE71000AF842 /* Utlits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E68C2271CE71000AF842 /* Utlits.swift */; };
-		6525E6912271D022000AF842 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E6902271D022000AF842 /* DataManager.swift */; };
-		6525E6932271D0B1000AF842 /* ServiceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E6922271D0B1000AF842 /* ServiceList.swift */; };
-		6525E6992271D723000AF842 /* SNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525E6982271D723000AF842 /* SNManager.swift */; };
 		67978B17B4345DAAF16371BD4C43C1D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0E56BEED9117DC5F2C7AF6582AB9C2 /* Foundation.framework */; };
 		69FDF2054A59E70DA898A6C12BF970AA /* Pods-ServiceNowExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E67EB394B0EC390039EC55E3A9C052E /* Pods-ServiceNowExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03859BDC36782899379E222720A297 /* ResponseSerialization.swift */; };
@@ -92,6 +92,16 @@
 		33115EC2A5164913C68F8BD170389EEE /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		3D7E25E371731FAE44F46A9F392CB5D5 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		3F459A8A3187A25C1598E12C15681CD8 /* Pods-ServiceNowExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ServiceNowExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4DEC1D40227334EA00FA3262 /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		4DEC1D41227334EA00FA3262 /* Utlits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utlits.swift; sourceTree = "<group>"; };
+		4DEC1D42227334EA00FA3262 /* SNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SNManager.swift; path = ServiceNowExtension/Classes/SNManager.swift; sourceTree = "<group>"; };
+		4DEC1D44227334EA00FA3262 /* ServiceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceList.swift; sourceTree = "<group>"; };
+		4DEC1D46227334EA00FA3262 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4DEC1D48227334EA00FA3262 /* APIConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConnection.swift; sourceTree = "<group>"; };
+		4DEC1D49227334EA00FA3262 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		4DEC1D4A227334EA00FA3262 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4DEC1D4B227334EA00FA3262 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		4DEC1D4C227334EA00FA3262 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		4E67EB394B0EC390039EC55E3A9C052E /* Pods-ServiceNowExtension_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ServiceNowExtension_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4F652B81B77453471CD91E7CE335DD64 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		4FAF565A9C47657EFF27863A542CBBF4 /* Pods-ServiceNowExtension_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ServiceNowExtension_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -99,16 +109,6 @@
 		582F5F333485B437D7D83F024FCACD5C /* ServiceNowExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ServiceNowExtension-dummy.m"; sourceTree = "<group>"; };
 		59B4FB66735D96D60D4EDDA85989C185 /* Pods-ServiceNowExtension_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ServiceNowExtension_Tests.modulemap"; sourceTree = "<group>"; };
 		60FFBDA80B1DC028D4E406EA5E04A46A /* Pods_ServiceNowExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServiceNowExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6525E6802271CA96000AF842 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		6525E6822271CC01000AF842 /* APIConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnection.swift; sourceTree = "<group>"; };
-		6525E6842271CC16000AF842 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		6525E6862271CC28000AF842 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		6525E6882271CC38000AF842 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
-		6525E68A2271CD29000AF842 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
-		6525E68C2271CE71000AF842 /* Utlits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utlits.swift; sourceTree = "<group>"; };
-		6525E6902271D022000AF842 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		6525E6922271D0B1000AF842 /* ServiceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceList.swift; sourceTree = "<group>"; };
-		6525E6982271D723000AF842 /* SNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNManager.swift; sourceTree = "<group>"; };
 		6A76DD856763D0BD23669B923710DBC8 /* Pods-ServiceNowExtension_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ServiceNowExtension_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6B1EBAF18C9FF39BF3A029F43934FC58 /* Pods-ServiceNowExtension_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ServiceNowExtension_Tests-dummy.m"; sourceTree = "<group>"; };
 		7516EEE2BD7E8A0E8A4D5DE1702DD447 /* Pods-ServiceNowExtension_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ServiceNowExtension_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -203,7 +203,11 @@
 		175694A6FC37C4AD174514BB79960E9C /* ServiceNowExtension */ = {
 			isa = PBXGroup;
 			children = (
-				651EC94A2272BD1800A5778B /* SNManager */,
+				4DEC1D42227334EA00FA3262 /* SNManager.swift */,
+				4DEC1D45227334EA00FA3262 /* Data Manager */,
+				4DEC1D3F227334EA00FA3262 /* Helpers */,
+				4DEC1D43227334EA00FA3262 /* Model */,
+				4DEC1D47227334EA00FA3262 /* Network Manager */,
 				A81C278FD2C67EE19333833EDB0DD0D9 /* Pod */,
 				01BCB3A93176DE4BF182A4A5B3176389 /* Support Files */,
 			);
@@ -227,53 +231,45 @@
 			path = "Target Support Files/Pods-ServiceNowExtension_Tests";
 			sourceTree = "<group>";
 		};
-		651EC94A2272BD1800A5778B /* SNManager */ = {
+		4DEC1D3F227334EA00FA3262 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				6525E6982271D723000AF842 /* SNManager.swift */,
-				6525E6972271D6FF000AF842 /* Helpers */,
-				6525E6962271D6F0000AF842 /* Model */,
-				6525E6942271D25E000AF842 /* Data Manager */,
-				6525E6952271D2CD000AF842 /* Network Manager */,
+				4DEC1D40227334EA00FA3262 /* Messages.swift */,
+				4DEC1D41227334EA00FA3262 /* Utlits.swift */,
 			);
-			path = SNManager;
+			name = Helpers;
+			path = ServiceNowExtension/Classes/Helpers;
 			sourceTree = "<group>";
 		};
-		6525E6942271D25E000AF842 /* Data Manager */ = {
+		4DEC1D43227334EA00FA3262 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6525E6902271D022000AF842 /* DataManager.swift */,
+				4DEC1D44227334EA00FA3262 /* ServiceList.swift */,
 			);
-			path = "Data Manager";
+			name = Model;
+			path = ServiceNowExtension/Classes/Model;
 			sourceTree = "<group>";
 		};
-		6525E6952271D2CD000AF842 /* Network Manager */ = {
+		4DEC1D45227334EA00FA3262 /* Data Manager */ = {
 			isa = PBXGroup;
 			children = (
-				6525E6822271CC01000AF842 /* APIConnection.swift */,
-				6525E6842271CC16000AF842 /* Reachability.swift */,
-				6525E6802271CA96000AF842 /* Parser.swift */,
-				6525E6862271CC28000AF842 /* NetworkRequest.swift */,
-				6525E6882271CC38000AF842 /* NetworkHelper.swift */,
+				4DEC1D46227334EA00FA3262 /* DataManager.swift */,
 			);
-			path = "Network Manager";
+			name = "Data Manager";
+			path = "ServiceNowExtension/Classes/Data Manager";
 			sourceTree = "<group>";
 		};
-		6525E6962271D6F0000AF842 /* Model */ = {
+		4DEC1D47227334EA00FA3262 /* Network Manager */ = {
 			isa = PBXGroup;
 			children = (
-				6525E6922271D0B1000AF842 /* ServiceList.swift */,
+				4DEC1D48227334EA00FA3262 /* APIConnection.swift */,
+				4DEC1D49227334EA00FA3262 /* NetworkHelper.swift */,
+				4DEC1D4A227334EA00FA3262 /* Reachability.swift */,
+				4DEC1D4B227334EA00FA3262 /* Parser.swift */,
+				4DEC1D4C227334EA00FA3262 /* NetworkRequest.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6525E6972271D6FF000AF842 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				6525E68C2271CE71000AF842 /* Utlits.swift */,
-				6525E68A2271CD29000AF842 /* Messages.swift */,
-			);
-			path = Helpers;
+			name = "Network Manager";
+			path = "ServiceNowExtension/Classes/Network Manager";
 			sourceTree = "<group>";
 		};
 		7973AFD89780F63AB42F3C09BCACE440 /* Pods-ServiceNowExtension_Example */ = {
@@ -529,12 +525,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					FA3616F4189A0E724474015D1662B503 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -586,17 +588,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6525E6892271CC38000AF842 /* NetworkHelper.swift in Sources */,
-				6525E6912271D022000AF842 /* DataManager.swift in Sources */,
-				6525E6932271D0B1000AF842 /* ServiceList.swift in Sources */,
-				6525E6832271CC01000AF842 /* APIConnection.swift in Sources */,
+				4DEC1D53227334EA00FA3262 /* NetworkHelper.swift in Sources */,
 				BD3A92494F1DAA2892B84F4411CFFCBA /* ServiceNowExtension-dummy.m in Sources */,
-				6525E68B2271CD29000AF842 /* Messages.swift in Sources */,
-				6525E68D2271CE71000AF842 /* Utlits.swift in Sources */,
-				6525E6852271CC16000AF842 /* Reachability.swift in Sources */,
-				6525E6872271CC28000AF842 /* NetworkRequest.swift in Sources */,
-				6525E6992271D723000AF842 /* SNManager.swift in Sources */,
-				6525E6812271CA96000AF842 /* Parser.swift in Sources */,
+				4DEC1D55227334EA00FA3262 /* Parser.swift in Sources */,
+				4DEC1D51227334EA00FA3262 /* DataManager.swift in Sources */,
+				4DEC1D50227334EA00FA3262 /* ServiceList.swift in Sources */,
+				4DEC1D4D227334EA00FA3262 /* Messages.swift in Sources */,
+				4DEC1D54227334EA00FA3262 /* Reachability.swift in Sources */,
+				4DEC1D4F227334EA00FA3262 /* SNManager.swift in Sources */,
+				4DEC1D56227334EA00FA3262 /* NetworkRequest.swift in Sources */,
+				4DEC1D52227334EA00FA3262 /* APIConnection.swift in Sources */,
+				4DEC1D4E227334EA00FA3262 /* Utlits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +677,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 161C1E3CCA7F8D8360880AAAC9A71681 /* ServiceNowExtension.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -696,6 +699,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -841,6 +845,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 161C1E3CCA7F8D8360880AAAC9A71681 /* ServiceNowExtension.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
