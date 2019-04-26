@@ -81,6 +81,64 @@ class NetworkRequest: NSObject {
     
     
     
+    
+    // POST
+    func post(url: String, params: [String: Any], headers: HTTPHeaders, encoding: ParameterEncoding = kJsonEncoding, completionHandler: @escaping (_ networkStatus: Bool, _ response: Data?, _ responseCode: Int?) -> ()) {
+        
+        
+        // Validate Internet Connection
+        if !network.isConnected()  {
+            
+            completionHandler(false, nil, nil)
+            return
+        }
+        
+        
+        // Send Request
+        Alamofire.request(makeUrl(url: url), method: .post, parameters: params, encoding: encoding, headers: headers).validate().responseJSON { response in
+            
+            // Log
+            if logActivity {
+                
+                print("\n\(String(describing: response.request?.url))")
+                if let params = response.request?.httpBody {
+                    
+                    print("\n\n\(String(data: params, encoding: String.Encoding.utf8) ?? "")")
+                }
+            }
+            
+            // Validate Response
+            switch response.result {
+                
+            case .success:
+                if logActivity {
+                    
+                    print(String(data: response.data!, encoding: String.Encoding.utf8) ?? "Nothing")
+                }
+                completionHandler(true, response.data, response.response?.statusCode)
+                
+                
+            case .failure(let error):
+                
+                if logActivity {
+                    
+                    print(response.request ?? "Nothing")  // original URL request
+                    print(response.response ?? "Nothing") // HTTP URL response
+                    print(String(data: response.data!, encoding: String.Encoding.utf8) ?? "Nothing")     // server data
+                    print(response.result)   // result of response serialization
+                    print(error)
+                }
+                
+                completionHandler(true, nil, nil)
+                return
+            }
+        }
+    }
+    
+    
+
+    
+    
     func multiPartPost(url: String, params: Parameters, headers: HTTPHeaders, file: Data, fileKey: String, completionHandler: @escaping (_ networkStatus: Bool, _ response: Data?) -> ())
     {
         
@@ -169,67 +227,6 @@ class NetworkRequest: NSObject {
     }
     
     
-    func generateBoundaryString() -> String
-    {
-        return "Boundary-\(NSUUID().uuidString)"
-    }
-    
-    
-    // POST
-    func post(url: String, params: [String: Any], headers: HTTPHeaders, encoding: ParameterEncoding = kJsonEncoding, completionHandler: @escaping (_ networkStatus: Bool, _ response: Data?, _ responseCode: Int?) -> ()) {
-        
-        
-        // Validate Internet Connection
-        if !network.isConnected()  {
-            
-            completionHandler(false, nil, nil)
-            return
-        }
-        
-        
-        // Send Request
-        Alamofire.request(makeUrl(url: url), method: .post, parameters: params, encoding: encoding, headers: headers).validate().responseJSON { response in
-            
-            // Log
-            if logActivity {
-                
-                print("\n\(String(describing: response.request?.url))")
-                if let params = response.request?.httpBody {
-                    
-                    print("\n\n\(String(data: params, encoding: String.Encoding.utf8) ?? "")")
-                }
-            }
-            
-            // Validate Response
-            switch response.result {
-                
-            case .success:
-                if logActivity {
-                    
-                    print(String(data: response.data!, encoding: String.Encoding.utf8) ?? "Nothing")
-                }
-                completionHandler(true, response.data, response.response?.statusCode)
-                
-                
-            case .failure(let error):
-                
-                if logActivity {
-                    
-                    print(response.request ?? "Nothing")  // original URL request
-                    print(response.response ?? "Nothing") // HTTP URL response
-                    print(String(data: response.data!, encoding: String.Encoding.utf8) ?? "Nothing")     // server data
-                    print(response.result)   // result of response serialization
-                    print(error)
-                }
-                
-                completionHandler(true, nil, nil)
-                return
-            }
-        }
-    }
-    
-    
-    
     
     // crate url to network call
     func makeUrl(url: String) -> String {
@@ -244,6 +241,7 @@ class NetworkRequest: NSObject {
     }
     
     
+    
     static func getImageUrl(_ url: String) -> String {
         
         // Validation
@@ -253,6 +251,13 @@ class NetworkRequest: NSObject {
         }
         
         return baseUrl + url
+    }
+    
+    
+    
+    func generateBoundaryString() -> String {
+        
+        return "Boundary-\(NSUUID().uuidString)"
     }
 }
 
