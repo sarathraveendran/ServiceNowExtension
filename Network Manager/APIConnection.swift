@@ -9,7 +9,6 @@ import Foundation
 
 struct APIEndPoint{
     
-    let baseUrl = "https://netrixllcdemo2.service-now.com"
     let incidentReportUrl = "/api/now/v1/table/incident"
     let uploadImageofIncident = "/api/now/attachment/upload"
 }

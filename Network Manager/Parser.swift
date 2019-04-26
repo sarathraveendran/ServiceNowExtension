@@ -29,6 +29,5 @@ struct Parser {
             print(error)
             return nil
         }
-}
-
+    }
 }

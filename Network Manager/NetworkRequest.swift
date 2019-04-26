@@ -25,7 +25,6 @@ class NetworkRequest: NSObject {
     
     
     
-    
     // GET
     func get(url: String, params: [String: Any], headers: HTTPHeaders, encoding: ParameterEncoding = kUrlEncodingByQuesyString, completionHandler: @escaping (_ networkStatus: Bool, _ response: Data?, _ responseCode: Int?) -> ()) {
         
@@ -235,19 +234,33 @@ class NetworkRequest: NSObject {
     // crate url to network call
     func makeUrl(url: String) -> String {
         
-        return endPoint.baseUrl + url
+        // Validation
+        guard let baseUrl = SNManager.shared?.domain else {
+         
+            return ""
+        }
+        
+        return  baseUrl + url
     }
     
     
     static func getImageUrl(_ url: String) -> String {
         
-        let endPoint = APIEndPoint()
-        return endPoint.baseUrl + url
+        // Validation
+        guard let baseUrl = SNManager.shared?.domain else {
+            
+            return ""
+        }
+        
+        return baseUrl + url
     }
 }
 
+
 extension NSMutableData {
+  
     func appendString(_ string: String) {
+    
         let data = string.data(using: String.Encoding.utf8, allowLossyConversion: false)
         append(data!)
     }
