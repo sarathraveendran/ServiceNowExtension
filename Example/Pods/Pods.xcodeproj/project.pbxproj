@@ -204,15 +204,10 @@
 			isa = PBXGroup;
 			children = (
 				6525E6982271D723000AF842 /* SNManager.swift */,
-				6525E68C2271CE71000AF842 /* Utlits.swift */,
-				6525E68A2271CD29000AF842 /* Messages.swift */,
-				6525E6922271D0B1000AF842 /* ServiceList.swift */,
-				6525E6902271D022000AF842 /* DataManager.swift */,
-				6525E6822271CC01000AF842 /* APIConnection.swift */,
-				6525E6842271CC16000AF842 /* Reachability.swift */,
-				6525E6802271CA96000AF842 /* Parser.swift */,
-				6525E6862271CC28000AF842 /* NetworkRequest.swift */,
-				6525E6882271CC38000AF842 /* NetworkHelper.swift */,
+				4D7EE2CE2273211100CE9505 /* Data Manager */,
+				4D7EE2CD2273211100CE9505 /* Helpers */,
+				4D7EE2CF2273211100CE9505 /* Model */,
+				4D7EE2D02273211100CE9505 /* Network Manager */,
 				A81C278FD2C67EE19333833EDB0DD0D9 /* Pod */,
 				01BCB3A93176DE4BF182A4A5B3176389 /* Support Files */,
 			);
@@ -234,6 +229,43 @@
 			);
 			name = "Pods-ServiceNowExtension_Tests";
 			path = "Target Support Files/Pods-ServiceNowExtension_Tests";
+			sourceTree = "<group>";
+		};
+		4D7EE2CD2273211100CE9505 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6525E68C2271CE71000AF842 /* Utlits.swift */,
+				6525E68A2271CD29000AF842 /* Messages.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4D7EE2CE2273211100CE9505 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6525E6902271D022000AF842 /* DataManager.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		4D7EE2CF2273211100CE9505 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6525E6922271D0B1000AF842 /* ServiceList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D7EE2D02273211100CE9505 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6525E6822271CC01000AF842 /* APIConnection.swift */,
+				6525E6842271CC16000AF842 /* Reachability.swift */,
+				6525E6802271CA96000AF842 /* Parser.swift */,
+				6525E6862271CC28000AF842 /* NetworkRequest.swift */,
+				6525E6882271CC38000AF842 /* NetworkHelper.swift */,
+			);
+			path = "Network Manager";
 			sourceTree = "<group>";
 		};
 		7973AFD89780F63AB42F3C09BCACE440 /* Pods-ServiceNowExtension_Example */ = {
