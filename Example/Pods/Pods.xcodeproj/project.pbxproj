@@ -203,7 +203,11 @@
 		175694A6FC37C4AD174514BB79960E9C /* ServiceNowExtension */ = {
 			isa = PBXGroup;
 			children = (
-				651EC94A2272BD1800A5778B /* SNManager */,
+				6525E6982271D723000AF842 /* SNManager.swift */,
+				6525E6972271D6FF000AF842 /* Helpers */,
+				6525E6962271D6F0000AF842 /* Model */,
+				6525E6942271D25E000AF842 /* Data Manager */,
+				6525E6952271D2CD000AF842 /* Network Manager */,
 				A81C278FD2C67EE19333833EDB0DD0D9 /* Pod */,
 				01BCB3A93176DE4BF182A4A5B3176389 /* Support Files */,
 			);
@@ -225,18 +229,6 @@
 			);
 			name = "Pods-ServiceNowExtension_Tests";
 			path = "Target Support Files/Pods-ServiceNowExtension_Tests";
-			sourceTree = "<group>";
-		};
-		651EC94A2272BD1800A5778B /* SNManager */ = {
-			isa = PBXGroup;
-			children = (
-				6525E6982271D723000AF842 /* SNManager.swift */,
-				6525E6972271D6FF000AF842 /* Helpers */,
-				6525E6962271D6F0000AF842 /* Model */,
-				6525E6942271D25E000AF842 /* Data Manager */,
-				6525E6952271D2CD000AF842 /* Network Manager */,
-			);
-			path = SNManager;
 			sourceTree = "<group>";
 		};
 		6525E6942271D25E000AF842 /* Data Manager */ = {

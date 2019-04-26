@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'ServiceNowExtension/Classes/**/*'
+  s.source_files = 'ServiceNowExtension/Classes/**/*.swift'
   
   # s.resource_bundles = {
   #   'ServiceNowExtension' => ['ServiceNowExtension/Assets/*.png']
