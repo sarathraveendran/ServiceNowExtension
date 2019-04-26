@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ServiceNowExtension'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A ServiceNowExtension.'
   s.swift_version    = '4.2'
   
@@ -31,8 +31,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
-
-  s.source_files = 'ServiceNowExtension/Classes/**/*'
+  s.source_files = 'ServiceNowExtension/**/*'
   
   # s.resource_bundles = {
   #   'ServiceNowExtension' => ['ServiceNowExtension/Assets/*.png']
