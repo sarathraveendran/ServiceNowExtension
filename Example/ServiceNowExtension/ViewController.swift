@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        print(ServiceNowManager.shared.getApproval())
     }
 
 
