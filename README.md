@@ -14,32 +14,6 @@ iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+
 Xcode 10.1+
 Swift 4.2+
 
-## Usage
-
- Import ServiceNowExtension in your view controller
- then Initiate SNManager Instance with required details.
- 
-       domain   =  "Servicenow domain url"
-       userName =  "Service now account userid"
-       password =  "Service now password"
-       var snManager = SNManager(domain, userName: userName, password: password)
-
-       
- Once the instance created you can raise your ticket through createIncidentTicket() method and pass the required parameters
-   
-    func createATicket() {
-        
-        let subject = "Subject 1"
-        let priority = "High"
-        let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-        let incidentImage = #imageLiteral(resourceName: "picx")
-     
-        snManager.createIncidentTicket(subject, priority: priority, description: description, image: incidentImage) { (status, message) in
-            
-            print(status)
-        }
-    }
-
 
 ## Installation
 
@@ -50,30 +24,31 @@ it, simply add the following line to your Podfile:
 pod 'ServiceNowExtension'
 ```
 
-## Usage Description
+## Usage
 
 Import ServiceNowExtension in your view controller then Initiate SNManager Instance with required details.
 
-```
-domain   =  "Servicenow domain url"
-userName =  "Service now account userid"
-password =  "Service now password"
-var snManager = SNManager(domain, userName: userName, password: password)
+    domain   =  "Servicenow domain url"
+    userName =  "Service now account userid"
+    password =  "Service now password"
+    var snManager = SNManager(domain, userName: userName, password: password)
+
+
 Once the instance created you can raise your ticket through createIncidentTicket() method and pass the required parameters
 
-func createATicket() {
+    func createATicket() {
 
-let subject = "Subject 1"
-let priority = "High"
-let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-let incidentImage = #imageLiteral(resourceName: "picx")
+        let subject = "Ticket Subject"
+        let priority = "Ticket Priority" [High/Medium/Low]
+        let description = "Decribe the issue"
+        let incidentImage = "Your image"
 
-snManager.createIncidentTicket(subject, priority: priority, description: description, image: incidentImage) { (status, message) in
+        snManager.createIncidentTicket(subject, priority: priority, description: description, image: incidentImage) { (status, message) in
 
-print(status)
-}
-}
-```
+        }
+    }
+
+
 
 ## Author
 
