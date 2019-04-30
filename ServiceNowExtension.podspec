@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ServiceNowExtension'
-  s.version          = '0.3.4'
+  s.version          = '0.3.5'
   s.summary          = 'A ServiceNowExtension.'
   s.swift_version    = '4.2'
   
