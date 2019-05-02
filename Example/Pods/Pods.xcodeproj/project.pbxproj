@@ -25,6 +25,7 @@
 		4DEC1D54227334EA00FA3262 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D4A227334EA00FA3262 /* Reachability.swift */; };
 		4DEC1D55227334EA00FA3262 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D4B227334EA00FA3262 /* Parser.swift */; };
 		4DEC1D56227334EA00FA3262 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC1D4C227334EA00FA3262 /* NetworkRequest.swift */; };
+		4DEE36FA227ACD5E00E267AD /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE36F9227ACD5E00E267AD /* enum.swift */; };
 		60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB5272AD01ECD0B09A86818A7754C4 /* Timeline.swift */; };
 		67978B17B4345DAAF16371BD4C43C1D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0E56BEED9117DC5F2C7AF6582AB9C2 /* Foundation.framework */; };
 		69FDF2054A59E70DA898A6C12BF970AA /* Pods-ServiceNowExtension_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E67EB394B0EC390039EC55E3A9C052E /* Pods-ServiceNowExtension_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -102,6 +103,7 @@
 		4DEC1D4A227334EA00FA3262 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4DEC1D4B227334EA00FA3262 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		4DEC1D4C227334EA00FA3262 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		4DEE36F9227ACD5E00E267AD /* enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
 		4E67EB394B0EC390039EC55E3A9C052E /* Pods-ServiceNowExtension_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ServiceNowExtension_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4F652B81B77453471CD91E7CE335DD64 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		4FAF565A9C47657EFF27863A542CBBF4 /* Pods-ServiceNowExtension_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ServiceNowExtension_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			children = (
 				4DEC1D40227334EA00FA3262 /* Messages.swift */,
 				4DEC1D41227334EA00FA3262 /* Utlits.swift */,
+				4DEE36F9227ACD5E00E267AD /* enum.swift */,
 			);
 			name = Helpers;
 			path = ServiceNowExtension/Classes/Helpers;
@@ -593,6 +596,7 @@
 				4DEC1D55227334EA00FA3262 /* Parser.swift in Sources */,
 				4DEC1D51227334EA00FA3262 /* DataManager.swift in Sources */,
 				4DEC1D50227334EA00FA3262 /* ServiceList.swift in Sources */,
+				4DEE36FA227ACD5E00E267AD /* enum.swift in Sources */,
 				4DEC1D4D227334EA00FA3262 /* Messages.swift in Sources */,
 				4DEC1D54227334EA00FA3262 /* Reachability.swift in Sources */,
 				4DEC1D4F227334EA00FA3262 /* SNManager.swift in Sources */,

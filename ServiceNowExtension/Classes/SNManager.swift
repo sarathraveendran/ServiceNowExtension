@@ -18,7 +18,6 @@ public class SNManager: NSObject {
     
     static var shared: SNManager?
     
-    
     // MARK: Life Cycle
     public init(_ domain: String, userName: String, password: String) {
         
@@ -32,14 +31,15 @@ public class SNManager: NSObject {
     
     
     
-    public  func createIncidentTicket(_ subject: String, priority: String, description: String, image: UIImage?, completionHandler: @escaping (_ status: Bool, _ message: String) -> ()) {
+    public  func createIncidentTicket(_ subject: String, priority: TicketPriority, description: String, image: UIImage?, completionHandler: @escaping (_ status: Bool, _ message: String) -> ()) {
         
         // Preare Params
         let subject = subject
-        var comments = ""
-        comments += "\(priority) priority \n"
-        comments += description
-        let params: Parameters = [keys.short_description: subject, keys.comments: comments]
+        let comments = description
+        let urgency = priority.value
+        let impact = priority.value
+        
+        let params: Parameters = [keys.short_description: subject, keys.comments: comments, keys.urgency: urgency, keys.impact: impact]
         
         // Preapre Request
         DataManager.shared.sendIncidentDetails(params) { (status, message, incidentDetails) in

@@ -21,6 +21,8 @@ struct GetPostKeys {
     let short_description = "short_description"
     let priority = "priority"
     let comments = "comments"
+    let impact = "impact"
+    let urgency = "urgency"
     
     
     //Upload incident Image
